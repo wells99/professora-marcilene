@@ -1,2 +1,2 @@
 # professora-marcilene
-um sistema pessoa de gerenciamento
+um sistema pessoal de gerenciamento
