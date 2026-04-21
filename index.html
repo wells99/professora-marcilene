@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html class="light" lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcy - Professora Particular</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&family=Manrope:wght@400;500;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary-container": "#fdd400",
+                        "on-primary-container": "#594a00",
+                        "tertiary-container": "#8eafff",
+                        "on-tertiary-container": "#002d6f",
+                        "inverse-surface": "#0e0e0e",
+                        "surface": "#f9f6f5",
+                        "on-surface": "#2f2e2e",
+                        "on-surface-variant": "#5c5b5b",
+                    },
+                    fontFamily: {
+                        "headline": ["Plus Jakarta Sans", "sans-serif"],
+                        "body": ["Manrope", "sans-serif"],
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        /* Classe para ícones preenchidos */
+        .filled-icon {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+
+<body class="bg-surface text-on-surface min-h-screen min-w-[320px] flex flex-col font-body">
+
+   
+    <nav class="bg-white/70 backdrop-blur-xl sticky top-0 z-50 border-b border-zinc-100">
+    <div class="flex justify-between items-center w-full px-6 py-4 max-w-2xl mx-auto">
+        <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-zinc-900">school</span>
+            <span class="text-xl font-extrabold text-zinc-900 tracking-tight font-headline">Professora Particular</span>
+        </div>
+        <button id="menu-button" class="active:scale-95 duration-200 text-zinc-900 focus:outline-none">
+            <span class="material-symbols-outlined" id="menu-icon">menu</span>
+        </button>
+    </div>
+
+    <div id="mobile-menu" class="hidden bg-white/90 backdrop-blur-xl border-t border-zinc-50 w-full shadow-lg">
+        <div class="max-w-2xl mx-auto flex flex-col p-4 gap-2">
+            
+            <a href="https://wa.me/5500000000000" target="_blank" class="flex items-center gap-3 p-4 rounded-xl hover:bg-zinc-50 transition-colors text-zinc-700 font-bold">
+                <span class="material-symbols-outlined text-green-600 filled-icon">chat</span>
+                Enviar mensagem no WhatsApp
+            </a>
+
+            <button id="share-button" class="flex items-center gap-3 p-4 rounded-xl hover:bg-zinc-50 transition-colors text-zinc-700 font-bold text-left w-full">
+                <span class="material-symbols-outlined text-blue-600">share</span>
+                Compartilhar link
+            </button>
+            
+        </div>
+    </div>
+</nav>
+
+    <main class="flex-grow container mx-auto px-6 py-10 max-w-2xl">
+
+        <section class="flex flex-col items-center text-center mb-12">
+            <div class="relative mb-6">
+                <div class="absolute -inset-4 bg-primary-container/20 rounded-full blur-2xl"></div>
+                <img alt="Teacher Profile"
+                    class="relative w-32 h-32 rounded-full object-cover border-4 border-white shadow-lg"
+                    src="assets/marcy.png" />
+            </div>
+            <h1 class="text-3xl font-extrabold tracking-tight mb-2 text-on-surface font-headline">Marcilene Tomaz</h1>
+            <p class="text-on-surface-variant font-medium text-base">Especialista em Educação Infantil</p>
+        </section>
+
+        <div class="flex flex-col gap-4">
+
+            <a href="#"
+                class="group flex items-center justify-between p-4 bg-primary-container rounded-2xl transition-all duration-300 hover:brightness-95 active:scale-[0.98]">
+                <div class="flex items-center gap-4">
+                    <div class="bg-white/30 p-3 rounded-xl flex items-center justify-center">
+                        <span
+                            class="material-symbols-outlined filled-icon text-on-primary-container">folder_special</span>
+                    </div>
+                    <span class="text-lg font-bold text-on-primary-container font-headline">Estrutura de Redação</span>
+                </div>
+                <span
+                    class="material-symbols-outlined text-on-primary-container group-hover:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+
+            <a href="#"
+                class="group flex items-center justify-between p-4 bg-inverse-surface rounded-2xl transition-all duration-300 hover:bg-zinc-800 active:scale-[0.98]">
+                <div class="flex items-center gap-4">
+                    <div class="bg-white/10 p-3 rounded-xl flex items-center justify-center">
+                        <span class="material-symbols-outlined filled-icon text-white">folder_special</span>
+                    </div>
+                    <span class="text-lg font-bold text-white font-headline">Matemática Fundamental II</span>
+                </div>
+                <span
+                    class="material-symbols-outlined text-white group-hover:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+
+            <a href="#"
+                class="group flex items-center justify-between p-4 bg-tertiary-container rounded-2xl transition-all duration-300 hover:brightness-95 active:scale-[0.98]">
+                <div class="flex items-center gap-4">
+                    <div class="bg-white/30 p-3 rounded-xl flex items-center justify-center">
+                        <span
+                            class="material-symbols-outlined filled-icon text-on-tertiary-container">folder_special</span>
+                    </div>
+                    <span class="text-lg font-bold text-on-tertiary-container font-headline">Ciências Humanas</span>
+                </div>
+                <span
+                    class="material-symbols-outlined text-on-tertiary-container group-hover:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+
+            <a href="#"
+                class="group flex items-center justify-between p-4 bg-[#12a64a] rounded-2xl transition-all duration-300 hover:brightness-95 active:scale-[0.98]">
+                <div class="flex items-center gap-4">
+                    <div class="bg-white/20 p-3 rounded-xl flex items-center justify-center">
+                        <span class="material-symbols-outlined filled-icon text-white">chat</span>
+                    </div>
+                    <span class="text-lg font-bold text-white font-headline">WhatsApp</span>
+                </div>
+                <span
+                    class="material-symbols-outlined text-white group-hover:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+
+        </div>
+    </main>
+
+    <footer class="mt-auto py-8 px-6 text-center border-t border-zinc-100">
+        <p class="text-[10px] uppercase tracking-widest text-zinc-400 font-bold">
+            © 2026 professoramarcilene
+        </p>
+        <a href="http://wellservices.online"
+            class="text-[10px] uppercase tracking-widest text-zinc-400 hover:text-zinc-600 transition-colors">
+            Desenvolvido por wellservices
+        </a>
+    </footer>
+
+   <script>
+    const menuButton = document.getElementById('menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+    const shareButton = document.getElementById('share-button');
+
+    // Lógica Abrir/Fechar Menu
+    menuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        menuIcon.textContent = mobileMenu.classList.contains('hidden') ? 'menu' : 'close';
+    });
+
+    // Lógica de Compartilhamento Nativo
+    shareButton.addEventListener('click', async () => {
+        const shareData = {
+            title: 'Professora Particular - Marcy',
+            text: 'Confira o perfil da Professora Marcy e seus conteúdos acadêmicos!',
+            url: window.location.href // Pega o link atual da página automaticamente
+        };
+
+        try {
+            if (navigator.share) {
+                // Abre a janelinha do sistema (Android/iOS)
+                await navigator.share(shareData);
+                console.log('Compartilhado com sucesso');
+            } else {
+                // Caso o navegador não suporte (ex: PCs antigos), copia o link
+                await navigator.clipboard.writeText(window.location.href);
+                alert('Link copiado para a área de transferência!');
+            }
+        } catch (err) {
+            console.log('Erro ao compartilhar:', err);
+        } finally {
+            // Fecha o menu após a ação
+            mobileMenu.classList.add('hidden');
+            menuIcon.textContent = 'menu';
+        }
+    });
+</script>
+</body>
+
+</html>
